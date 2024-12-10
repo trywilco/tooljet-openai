@@ -1,0 +1,34 @@
+id: introduction_tooljet_openai
+learningObjectives:
+  - Learn about ToolJet and OpenAI and their capabilities.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text:
+              Welcome to the quest! Today, we’ll explore how to build a no-code audio
+              transcriber and analyzer using [ToolJet](https://tooljet.com/) and
+              [OpenAI](https://platform.openai.com/docs/).
+          - text:
+              ToolJet is a fantastic no-code platform that lets you visually create apps
+              without writing much code. Check out ToolJet’s overview
+              [here](https://docs.tooljet.com/docs/overview).
+          - text:
+              OpenAI, on the other hand, provides powerful APIs for natural language
+              processing and transcription. Learn about OpenAI’s transcription
+              capabilities
+              [here](https://platform.openai.com/docs/api-reference/audio).
+          - text:
+              By combining these tools, you’ll create an app that turns audio into
+              actionable insights. Ready to dive in?
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

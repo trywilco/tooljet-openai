@@ -1,0 +1,30 @@
+id: tooljet_audio_transcriber
+title: Build an Audio Transcriber with ToolJet
+subtitle: Create an audio transcriber using ToolJet & OpenAI
+description: >-
+  Unleash your inner maker as you build a functional and powerful audio
+  transcriber and analyzer using ToolJet and OpenAI.
+
+  In this quest, you’ll follow a guided process to set up a no-code ToolJet application, integrate OpenAI for transcription, and enhance the app with analytical capabilities.
+
+  You'll learn the essentials of ToolJet's visual app builder, how to connect APIs like OpenAI, and ways to process audio input for meaningful insights.
+
+  By the end of this quest, you'll have your own custom-built audio transcriber and analyzer, ready to transform audio content into actionable data. Let’s get building!
+level: intermediate
+duration: 0.75
+skills:
+  - No-code development
+  - API integration
+  - OpenAI API usage
+  - Audio processing
+  - Application design
+steps:
+  - introduction_tooljet_openai
+  - getting_started_tooljet
+  - setting_up_app
+  - integrating_openai
+  - upload_audio_files
+  - quiz_test_transcription
+  - reflect_on_learning
+type: MODULE
+repository: null

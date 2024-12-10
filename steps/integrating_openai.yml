@@ -1,0 +1,29 @@
+id: integrating_openai
+learningObjectives:
+  - Understand how to connect and use OpenAI APIs for transcription.
+hints:
+  - Learn more about OpenAI APIs [here](https://platform.openai.com/docs/).
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Now, let’s integrate OpenAI. First, make sure you have an [OpenAI
+              account](https://platform.openai.com/signup/) and API key.
+          - text: In ToolJet, navigate to the API integrations section and add a new API.
+              You can learn how to configure APIs in ToolJet
+              [here](https://docs.tooljet.com/docs/apis).
+          - text: Enter the OpenAI endpoint URL from their [API
+              documentation](https://platform.openai.com/docs/api-reference/audio)
+              and paste your API key into the headers section.
+          - text: This will allow ToolJet to make calls to OpenAI’s transcription service.
+              Let’s configure it step-by-step.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

@@ -1,0 +1,27 @@
+id: setting_up_app
+learningObjectives:
+  - Learn how to set up your ToolJet application for the project.
+hints:
+  - Refer to the getting started guide in ToolJet’s docs for tips
+    [here](https://docs.tooljet.com/docs/getting-started).
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Time to create your app! Click on the 'Create App' button on the [ToolJet
+              dashboard](https://tooljet.com/).
+          - text: Name your app something meaningful, like 'Audio Transcriber'.
+          - text: Once your app is created, you’ll see the visual builder where you can add
+              components and configure settings.
+          - text: For now, just get familiar with this space. We’ll start adding
+              functionality soon.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

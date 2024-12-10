@@ -1,0 +1,56 @@
+id: quiz_test_transcription
+learningObjectives:
+  - Ensure that the transcriber works as expected.
+hints:
+  - Think about how the file upload interacts with OpenAI.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: What step triggers the transcription process in the app?
+    - actionId: quiz_message
+      name: quiz
+      params:
+        person: lucca
+        options:
+          - File upload triggers the transcription workflow.
+          - API key input starts transcription.
+          - User clicks a transcription button.
+trigger:
+  type: chat_form_submitted
+  flowNode:
+    switch:
+      key: ${formSubmission}
+      cases:
+        A:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Correct! The file upload component starts the transcription process. Great
+                      job!
+            - actionId: finish_step
+        B:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Not quite. The API key enables the connection but doesn’t start
+                      transcription.
+            - actionId: replay_action
+              params:
+                actionName: quiz
+        C:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Close, but we configured it to trigger after file upload.
+            - actionId: replay_action
+              params:
+                actionName: quiz

@@ -1,0 +1,27 @@
+id: getting_started_tooljet
+learningObjectives:
+  - Familiarize yourself with the ToolJet platform and its interface.
+hints:
+  - Check out ToolJet's documentation [here](https://docs.tooljet.com).
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: ToolJet is a no-code development platform where you can drag and drop
+              components to build applications.
+          - text: Let’s start by visiting the [ToolJet dashboard](https://tooljet.com/).
+          - text: ToolJet’s key features include a visual builder, integrations with popular
+              APIs, and deployment tools. You can explore these features
+              in-depth [here](https://docs.tooljet.com/docs/components).
+          - text: Take a moment to explore the interface. Notice how easy it is to navigate
+              and find what you need.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
