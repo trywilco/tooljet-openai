@@ -13,11 +13,10 @@ description: >-
 level: intermediate
 duration: 0.75
 skills:
-  - No-code development
-  - API integration
-  - OpenAI API usage
-  - Audio processing
-  - Application design
+  - No-code
+  - API
+  - OpenAI
+  - Audio
 steps:
   - introduction_tooljet_openai
   - getting_started_tooljet
