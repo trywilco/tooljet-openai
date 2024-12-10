@@ -9,15 +9,18 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Now, let’s integrate OpenAI. First, make sure you have an [OpenAI
+          - text:
+              Now, let’s integrate OpenAI. First, make sure you have an [OpenAI
               account](https://platform.openai.com/signup/) and API key.
-          - text: In ToolJet, navigate to the API integrations section and add a new API.
+          - text:
+              In ToolJet, navigate to the API integrations section and add a new API.
               You can learn how to configure APIs in ToolJet
-              [here](https://docs.tooljet.com/docs/apis).
+              [here](https://docs.tooljet.com/docs/marketplace/plugins/marketplace-plugin-openai/).
           - text: Enter the OpenAI endpoint URL from their [API
               documentation](https://platform.openai.com/docs/api-reference/audio)
               and paste your API key into the headers section.
-          - text: This will allow ToolJet to make calls to OpenAI’s transcription service.
+          - text:
+              This will allow ToolJet to make calls to OpenAI’s transcription service.
               Let’s configure it step-by-step.
     - actionId: ready_message
       params:

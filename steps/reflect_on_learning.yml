@@ -9,7 +9,8 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: What was the most challenging part of building this app, and how did you
+          - text:
+              What was the most challenging part of building this app, and how did you
               overcome it?
 trigger:
   type: user_message
@@ -86,7 +87,8 @@ trigger:
             params:
               person: lucca
               messages:
-                - text: Awesome work on completing this quest! Reflect on what you’ve learned and
+                - text:
+                    Awesome work on completing this quest! Reflect on what you’ve learned and
                     think about where you can take these skills next.
           - actionId: finish_step
       else:

@@ -15,7 +15,7 @@ startFlow:
           - text:
               ToolJet is a fantastic no-code platform that lets you visually create apps
               without writing much code. Check out ToolJet’s overview
-              [here](https://docs.tooljet.com/docs/overview).
+              [here](https://docs.tooljet.com/docs/).
           - text:
               OpenAI, on the other hand, provides powerful APIs for natural language
               processing and transcription. Learn about OpenAI’s transcription

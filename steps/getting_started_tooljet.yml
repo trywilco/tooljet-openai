@@ -9,14 +9,13 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: ToolJet is a no-code development platform where you can drag and drop
+          - text:
+              ToolJet is a no-code development platform where you can drag and drop
               components to build applications.
-          - text: Let’s start by visiting the [ToolJet dashboard](https://tooljet.com/).
-          - text: ToolJet’s key features include a visual builder, integrations with popular
-              APIs, and deployment tools. You can explore these features
-              in-depth [here](https://docs.tooljet.com/docs/components).
-          - text: Take a moment to explore the interface. Notice how easy it is to navigate
-              and find what you need.
+          - text:
+              ToolJet’s key features include a visual builder, integrations with popular
+              APIs, and deployment tools.
+          - text: If you don't have a ToolJet account yet, don't worry! You can easily create one [here](https://www.tooljet.com/login) and start building amazing applications in no time.
     - actionId: ready_message
       params:
         person: lucca

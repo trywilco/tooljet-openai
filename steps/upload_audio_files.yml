@@ -3,7 +3,7 @@ learningObjectives:
   - Learn how to enable file uploads and process audio inputs.
 hints:
   - ToolJet’s file upload documentation can help you
-    [here](https://docs.tooljet.com/docs/components/file-upload).
+    [here](https://docs.tooljet.com/docs/widgets/file-picker/).
 startFlow:
   do:
     - actionId: bot_message
@@ -11,11 +11,14 @@ startFlow:
         person: lucca
         messages:
           - text: To handle audio files, we’ll use ToolJet’s file upload component.
-          - text: Drag the upload widget into your app layout and configure it to accept
+          - text:
+              Drag the upload widget into your app layout and configure it to accept
               audio file types like .mp3 or .wav. Instructions can be found
-              [here](https://docs.tooljet.com/docs/components/file-upload).
-          - text: When a file is uploaded, ToolJet will trigger the configured workflow,
+              [here](https://docs.tooljet.com/docs/widgets/file-picker/).
+          - text:
+              When a file is uploaded, ToolJet will trigger the configured workflow,
               sending the file to OpenAI for transcription.
+          - text: "For a detailed tutorial, you can refer to this [guide](https://dev.to/tooljet/build-an-audio-transcriber-and-analyzer-using-tooljet-and-openai-1109)."
           - text: Test the upload feature to ensure it works smoothly.
     - actionId: ready_message
       params:
